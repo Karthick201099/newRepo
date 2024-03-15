@@ -1,0 +1,132 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container-1 {
+  width: 1500px;
+  margin: 0 auto;
+  background-image: url(/src/assets/image/banner-bg-1.webp);
+  /* background-position: -100px 0px; */
+  background-size: cover;
+  position: relative;
+}
+.main {
+  display: flex;
+}
+.sub-img {
+  flex: 0 0 44%;
+  position: relative;
+  .img-5 {
+    position: absolute;
+    top: 0;
+    left: 460px;
+
+    img {
+      width: 200px;
+    }
+  }
+}
+.sub-img img {
+  width: 100%;
+}
+.sub {
+  padding-block: 100px;
+  padding-inline: 80px;
+  color: white;
+  h3 {
+    font-size: 25px;
+    font-family: "Lobster Two, cursive";
+  }
+  h1 {
+    font-size: 69px;
+    padding-block: 40px;
+    font-family: "Lobster Two, cursive";
+  }
+  p {
+    font-size: 17px;
+    padding-bottom: 45px;
+    line-height: 26px;
+  }
+  button {
+    padding: 15px 40px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: rgb(234, 179, 107);
+    z-index: 99;
+    position: relative;
+  }
+  button:hover {
+    transition: all ease 500ms;
+    border-radius: 25px;
+    background-color: burlywood;
+  }
+  .img-1 {
+    position: absolute;
+    bottom: 0;
+    left: 50px;
+    animation: shape-1 2700ms infinite;
+  }
+  .img-2 {
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    animation: shape-1 2700ms infinite;
+  }
+  .img-2 {
+    position: absolute;
+    top: 10px;
+    left: 350px;
+    animation: shape-1 2700ms infinite;
+  }
+  .img-3 {
+    position: absolute;
+    top: 25px;
+    left: 600px;
+    animation: shape-2 2600ms linear infinite;
+  }
+  .img-4 {
+    position: absolute;
+    bottom: 50px;
+    left: 700px;
+    animation: shape-3 6000ms linear infinite;
+  }
+}
+@keyframes shape-1 {
+  0% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  100% {
+    transform: translateX(10px);
+  }
+}
+@keyframes shape-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shape-3 {
+  0% {
+    transform: translateY(40px) rotate(45deg);
+  }
+
+  20% {
+    transform: translatex(40px) rotate(90deg);
+  }
+  60% {
+    transform: translateY(-40px) rotate(135deg);
+  }
+  80% {
+    transform: translateX(-40px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(40px) rotate(165deg);
+  }
+}

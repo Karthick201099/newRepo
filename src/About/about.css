@@ -1,0 +1,150 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container-3 {
+  width: 1500px;
+  margin: 0 auto;
+  position: relative;
+  padding: 80px;
+  background-color: #151b20;
+  padding: 80px;
+}
+.main-3 {
+  display: flex;
+  justify-content: center;
+  gap: 45px;
+
+  .sub-3 {
+    flex: 0 0 45%;
+    z-index: 2;
+
+    .img-31 {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .img-32 {
+      position: absolute;
+      top: 30px;
+      left: 550px;
+      animation: shape1 2800ms linear infinite;
+    }
+  }
+  .sub-31 {
+    color: white;
+    position: relative;
+    flex: 45%;
+    padding-top: 15px;
+    h5 {
+      font-size: 18px;
+      padding-bottom: 10px;
+    }
+    h1 {
+      font-size: 33px;
+      padding-bottom: 20px;
+    }
+    p {
+      font-size: 18px;
+      padding-bottom: 25px;
+    }
+    .main-box3 {
+      display: flex;
+      justify-content: space-between;
+      gap: 25px;
+      padding-block: 10px;
+
+      .box-3 {
+        padding-block: 20px;
+        padding-inline: 15px;
+        border: 1px solid #0e1317;
+        background-color: #0e1317;
+        z-index: 2;
+
+        .content-3 {
+          display: flex;
+          align-items: center;
+          gap: 25px;
+          font-size: 20px;
+        }
+        p {
+          padding-block: 15px;
+        }
+      }
+    }
+    ul {
+      padding-block: 15px 45px;
+      li {
+        list-style: none;
+        padding-block: 4px;
+
+        span {
+          font-size: 18px;
+          padding-left: 8px;
+        }
+      }
+    }
+    button {
+      padding: 15px 35px;
+      background-color: burlywood;
+      font-size: 18px;
+    }
+    button:hover {
+      transition: all ease 500ms;
+      border-radius: 25px;
+      background-color: burlywood;
+    }
+    .img-34 {
+      position: absolute;
+      top: 60px;
+      left: 620px;
+      animation: shape3 6000ms linear infinite;
+    }
+    .img-33 {
+      position: absolute;
+      top: 365px;
+      left: 450px;
+      animation: shape2 2500ms linear infinite;
+    }
+  }
+}
+@keyframes shape1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes shape2 {
+  0% {
+    transform: translateX(20px);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(20px);
+  }
+}
+@keyframes shape3 {
+  0% {
+    transform: translateY(40px) rotate(45deg);
+  }
+
+  20% {
+    transform: translatex(40px) rotate(90deg);
+  }
+  60% {
+    transform: translateY(-40px) rotate(135deg);
+  }
+  80% {
+    transform: translateX(-40px) rotate(180deg);
+  }
+  100% {
+    transform: translateY(40px) rotate(165deg);
+  }
+}

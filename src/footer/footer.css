@@ -1,0 +1,234 @@
+.container-foot {
+  width: 1500px;
+  margin: 0 auto;
+  background-color: #0e1317;
+  position: relative;
+
+  .main-foot {
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+    padding: 100px 80px;
+    .sub-foot1 {
+      flex: 0 0 23%;
+
+      p {
+        font-size: 16px;
+        padding-block: 15px;
+        line-height: 25px;
+      }
+
+      ul {
+        li {
+          list-style: none;
+          display: inline-block;
+          padding-block: 15px;
+          padding-inline: 10px;
+          transition: 500ms;
+
+          a {
+            color: white;
+            border: 1px solid #151b20;
+            padding: 12px;
+            text-align: center;
+            border-radius: 100%;
+            background-color: #151b20;
+            transition: 1s;
+          }
+
+          a:hover {
+            background-color: burlywood;
+            border: 1px solid burlywood;
+            transition: 1s;
+          }
+        }
+        li:hover {
+          transform: translatey(-5px);
+          transition: 500ms;
+        }
+      }
+    }
+    .sub-foot2 {
+      flex: 0 0 20%;
+      h2 {
+        padding-left: 15px;
+        font-size: 27px;
+      }
+
+      ul {
+        padding-block: 20px;
+
+        li {
+          list-style: none;
+          padding-block: 8px;
+          padding-inline: 5px;
+          transition: 500ms;
+          font-size: 20px;
+          padding-left: 25px;
+
+          a {
+            text-decoration: none;
+            color: white;
+            span {
+              padding-left: 5px;
+            }
+          }
+        }
+        li:hover {
+          transform: translateX(5px);
+          transition: 500ms;
+        }
+      }
+    }
+    .sub-foot3 {
+      flex: 0 0 27%;
+      h2 {
+        font-size: 27px;
+      }
+
+      ul {
+        padding-block: 20px;
+        li {
+          list-style: none;
+          font-size: 20px;
+          padding-block: 8px;
+
+          span {
+            padding-left: 50px;
+          }
+          #wed {
+            padding-left: 25px;
+          }
+          #fri {
+            padding-left: 65px;
+          }
+          #sun {
+            padding-left: 53px;
+          }
+        }
+      }
+    }
+    .sub-foot4 {
+      flex: 0 0 22%;
+      padding-left: 25px;
+
+      .box-foot {
+        padding-block: 15px;
+        .content-f {
+          display: flex;
+          padding-block: 10px;
+          justify-content: start;
+          font-size: 20px;
+          gap: 30px;
+          align-items: center;
+
+          .i-f {
+            border: 1px solid #151b20;
+            padding: 8px 10px;
+            border-radius: 50%;
+            background-color: #151b20;
+          }
+          &:hover {
+            color: burlywood;
+          }
+        }
+        .content-f:hover .i-f {
+          background-color: burlywood;
+          transition: 1ms;
+        }
+        .content-f0 {
+          display: flex;
+          padding-block: 10px;
+          justify-content: start;
+          font-size: 20px;
+          gap: 30px;
+          align-items: center;
+
+          .i-f0 {
+            border: 1px solid #151b20;
+            padding: 8px 10px;
+            border-radius: 50%;
+            background-color: #151b20;
+          }
+        }
+        .content-f0:hover .i-f0 {
+          background-color: burlywood;
+          transition: 1ms;
+        }
+      }
+    }
+  }
+  > h2 {
+    text-align: center;
+    color: white;
+    padding-block: 30px;
+    border-top: 1px solid rgb(52, 51, 51);
+  }
+}
+
+.foot-ani3 {
+  position: absolute;
+  top: 60px;
+  right: 0px;
+  animation: ani3 3900ms linear infinite;
+}
+
+@keyframes ani3 {
+  0% {
+    transform: translateY(-40px);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+  100% {
+    transform: translateY(-40px);
+  }
+}
+.foot-ani4 {
+  position: absolute;
+  top: 355px;
+  right: 160px;
+  animation: ani4 3900ms linear infinite;
+}
+
+@keyframes ani4 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.foot-ani2 {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  animation: ani1 3000ms linear infinite;
+}
+@keyframes ani1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.foot-ani1 {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  animation: ani2 3000ms linear infinite;
+}
+@keyframes ani2 {
+  0% {
+    transform: translateY(-15px);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+  100% {
+    transform: translateY(-15px);
+  }
+}

@@ -1,0 +1,44 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container-5 {
+  width: 1500px;
+  margin: 0 auto;
+  position: relative;
+  padding: 100px 80px;
+  background-color: #151b20;
+}
+.container-5::after {
+  content: "";
+  background-image: url("src/assets/image/odometer-bg.webp");
+  background-position: bottom center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99;
+}
+.main-5 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  .sub-5 {
+    h1 {
+      color: white;
+      span {
+        font-size: 70px;
+        padding-right: 3px;
+      }
+    }
+    h2 {
+      color: white;
+      font-size: 19px;
+    }
+  }
+}

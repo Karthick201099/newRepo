@@ -1,0 +1,35 @@
+.main-2 {
+  display: flex;
+  width: 1500px;
+  margin: 0 auto;
+  justify-content: center;
+  padding-inline: 80px;
+  padding-block: 80px;
+  gap: 35px;
+  background-color: #0e1317;
+
+  .sub-2 {
+    flex: 0 0 21%;
+
+    h3 {
+      font-family: "Lobster Two, cursive";
+      font-size: 23px;
+      padding-block: 20px;
+      color: white;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+      padding-bottom: 25px;
+      color: white;
+      line-height: 25px;
+    }
+    a {
+      text-decoration: none;
+      color: white;
+      border-bottom: 1px solid white;
+      padding-bottom: 7px;
+      opacity: 0.8;
+    }
+  }
+}

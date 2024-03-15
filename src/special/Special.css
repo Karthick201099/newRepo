@@ -1,0 +1,134 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.container-4 {
+  width: 1500px;
+  margin: 0 auto;
+  position: relative;
+  padding: 80px;
+  background-image: url(src/assets/image/menu-bg-img.webp);
+}
+.container-4::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  background: rgba(14, 19, 23, 0.96);
+}
+.article-4 {
+  position: relative;
+  z-index: 2;
+  h5 {
+    text-align: center;
+    font-size: 18px;
+    font-family: "Lobster Two, cursive";
+    color: white;
+  }
+  h1 {
+    text-align: center;
+    font-family: "Lobster Two, cursive";
+    color: white;
+    font-size: 35px;
+    padding-top: 10px;
+  }
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    .menu-box {
+      #hover {
+        border-bottom: 1px solid burlywood;
+      }
+      a {
+        text-decoration: none;
+        border: 1px solid #151b20;
+        padding: 15px 30px;
+        background-color: #151b20;
+        font-size: 18px;
+        color: #abb8c3;
+        margin-inline: 5px;
+      }
+      a:hover {
+        background-color: burlywood;
+        color: black;
+      }
+    }
+    .menu-box1 {
+      padding-right: 24px;
+      a {
+        text-decoration: none;
+        border: 1px solid #151b20;
+        background-color: #151b20;
+        color: #abb8c3;
+        padding: 15px 30px;
+      }
+      a:hover {
+        background-color: burlywood;
+        color: black;
+      }
+    }
+  }
+
+  .main-4 {
+    top: 0;
+    .sub-4 {
+      position: relative;
+      padding-block: 45px 80px;
+
+      a {
+        text-decoration: none;
+        border: 1px solid rgb(234, 179, 107);
+        padding: 15px 35px;
+        background-color: rgb(234, 179, 107);
+        color: black;
+        font-size: 16px;
+        position: absolute;
+        top: 145px;
+        left: 80px;
+        visibility: hidden;
+        transition: all 0.5s ease;
+        transform: scale(0);
+      }
+
+      .box-4 {
+        border: 1px solid #151b20;
+        background-color: #151b20;
+        margin-inline: 20px;
+        padding-block: 15px 20px;
+        width: 270px;
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 285px;
+
+        h2 {
+          font-size: 30px;
+          padding-block: 15px;
+        }
+        h3 {
+          font-size: 20px;
+        }
+        span {
+          text-decoration: line-through;
+          padding-left: 5px;
+        }
+      }
+    }
+    .sub-4:hover a {
+      visibility: visible;
+      /* top: 150px; */
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}
