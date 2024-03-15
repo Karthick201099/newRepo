@@ -1,8 +1,13 @@
+// import { useState } from "react";
 import "../menu/menu.css";
 import Menuprops from "./Menuprops";
 import Slider from "react-slick";
 
 const Menu = () => {
+  // const [curIndex, setCurindex] = useState(0);
+
+  // const slick = "slick-center";
+
   const settings = {
     dots: false,
     centerMode: true,
@@ -12,7 +17,14 @@ const Menu = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
+    // afterChange: (index: number) => {
+    //   showContent(index);
+    },
   };
+
+  // const showContent = (index: number) => {
+  //   setCurindex(index);
+  // };
 
   return (
     <>

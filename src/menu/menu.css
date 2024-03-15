@@ -26,14 +26,22 @@
         width: 100%;
       }
 
+      /* .slick-center {
+        .content-7 {
+          display: block;
+          border: 2px solid red;
+        }
+      } */
+
       .content-7 {
         border: 1px solid #0e1317;
+
         text-align: center;
         padding-top: 30px;
         width: 520px;
         background-color: #0e1317;
         position: absolute;
-        display: none;
+        /* display: none; */
         top: 390px;
         left: 75px;
 
